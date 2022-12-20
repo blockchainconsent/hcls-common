@@ -1,0 +1,20 @@
+[
+    {
+        "index": { "fields": ["txID", "status"] },
+        "name": "txID-status-index",
+        "type": "json",
+        "partitioned": true
+    },
+    {
+        "index": { "fields": [{ "name": "txID", "type": "string" }] },
+        "name": "txID-text",
+        "type": "text",
+        "partitioned": true
+    },
+    {
+        "index": { "fields": [{ "latestTimestamp": "desc" }] },
+        "name": "latestTimestamp-index",
+        "type": "json",
+        "partitioned": true
+    }
+]

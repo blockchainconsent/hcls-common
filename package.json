@@ -1,0 +1,32 @@
+{
+  "name": "hcls-common",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:HCLS-Consent-Manager/hcls-common.git"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ibm-cloud/cloudant": "0.0.19",
+    "axios": "^0.21.4",
+    "ibm-cloud-sdk-core": "^2.14.4",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
+    "querystring": "^0.2.1",
+    "retry-axios": "^2.6.0",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "^12.13.1",
+    "npm": "^6.4.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,scss,html,xml}": [
+      "node non-shipped/scripts/copyright-lint.js"
+    ]
+  }
+}

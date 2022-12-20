@@ -1,0 +1,20 @@
+[
+    {
+        "index": { "fields": ["pii", "dePii"] },
+        "name": "pii-dePii-index",
+        "type": "json",
+        "partitioned": true
+    },
+    {
+        "index": { "fields": ["dePii", "pii"] },
+        "name": "dePii-pii-index",
+        "type": "json",
+        "partitioned": true
+    },
+    {
+        "index": { "fields": [{ "name": "dePii", "type": "string" }] },
+        "name": "dePii-text",
+        "type": "text",
+        "partitioned": true
+    }
+]
